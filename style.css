@@ -1,0 +1,141 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root {
+  /* --font-family: 'Open Sans', sans-serif; */
+  --font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  --width-content: 1080px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family);
+}
+
+body {
+  height: 100dvh;
+  font-size: 1.6rem;
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+header {
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+footer {
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
+
+button {
+  background-color: DodgerBlue;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================== */
+header > h1 {
+  width: 100%;
+  max-width: calc(100% - 6rem);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+header > button {
+  background-color: transparent;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+
+main section:first-child {
+  border-bottom: 1px solid #dadada;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.code-block {
+  width: 60px;
+}
+
+.code-block code {
+  visibility: hidden;
+}
+
+.code-block button {
+  background-color: #dadada;
+  width: 100%;
+}
